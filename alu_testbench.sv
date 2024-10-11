@@ -16,7 +16,7 @@ initial begin
   operand_a = 32'h00000001;
   operand_b = 32'h00000002;
   #10
-  opcode = 3'b011; // MUL
+  opcode = 3'b011; // DIV
   data_type = 1'b0; // SIGNED
   operand_a = 32'h00000004;
   operand_b = 32'h00000004;
