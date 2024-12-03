@@ -1,0 +1,79 @@
+# Compile of design.sv was successful.
+# Compile of interface.sv was successful.
+# Compile of testbench.sv was successful with warnings.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.tb_top
+# vsim -gui work.tb_top 
+# Start time: 18:52:55 on Dec 03,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: D:\questa\examples\testbench.sv(24): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# Loading sv_std.std
+# Loading work.testbench_sv_unit(fast)
+# Loading work.tb_top(fast)
+# Loading work.intf(fast)
+add wave -position insertpoint  \
+sim:/tb_top/vif/rst_n \
+sim:/tb_top/vif/OperandB \
+sim:/tb_top/vif/OperandA \
+sim:/tb_top/vif/op_code \
+sim:/tb_top/vif/data_out \
+sim:/tb_top/vif/clk
+run -all
+# -------------Generator Class Signals---------------
+# OperandA=110011111010011000000111111010 , OperandB=11111001110010101011001111011010 , op_code=0 , data_out=x
+# -------------Driver Class Signals---------------
+# OperandA=110011111010011000000111111010 , OperandB=11111001110010101011001111011010 , op_code=0 , data_out=x
+# -------------Monitor Class Signals---------------
+# OperandA=110011111010011000000111111010 , OperandB=11111001110010101011001111011010 , op_code=0 , data_out=100101101101101000011010111010100
+# -------------Scoreboard Signals---------------
+# OperandA=110011111010011000000111111010 , OperandB=11111001110010101011001111011010 , op_code=0 , data_out=100101101101101000011010111010100
+# Addition Succesfull
+# -------------Generator Class Signals---------------
+# OperandA=11000011101011101010011100111001 , OperandB=110100110010100011110001100001 , op_code=110 , data_out=x
+# -------------Driver Class Signals---------------
+# OperandA=11000011101011101010011100111001 , OperandB=110100110010100011110001100001 , op_code=110 , data_out=x
+# -------------Monitor Class Signals---------------
+# OperandA=11000011101011101010011100111001 , OperandB=110100110010100011110001100001 , op_code=110 , data_out=111100010100010101100011000110
+# -------------Scoreboard Signals---------------
+# OperandA=11000011101011101010011100111001 , OperandB=110100110010100011110001100001 , op_code=110 , data_out=111100010100010101100011000110
+# NOT Operation Succesfull
+# -------------Generator Class Signals---------------
+# OperandA=11101010111110100101110111010000 , OperandB=10111100001001001011000110101 , op_code=1000 , data_out=x
+# -------------Driver Class Signals---------------
+# OperandA=11101010111110100101110111010000 , OperandB=10111100001001001011000110101 , op_code=1000 , data_out=x
+# -------------Monitor Class Signals---------------
+# OperandA=11101010111110100101110111010000 , OperandB=10111100001001001011000110101 , op_code=1000 , data_out=111010101111101001011101110100
+# -------------Scoreboard Signals---------------
+# OperandA=11101010111110100101110111010000 , OperandB=10111100001001001011000110101 , op_code=1000 , data_out=111010101111101001011101110100
+# Right Shift Succcesfull
+# -------------Generator Class Signals---------------
+# OperandA=11001110101100001101001000000110 , OperandB=1011101001110111001110111000 , op_code=1000 , data_out=x
+# -------------Driver Class Signals---------------
+# OperandA=11001110101100001101001000000110 , OperandB=1011101001110111001110111000 , op_code=1000 , data_out=x
+# -------------Monitor Class Signals---------------
+# OperandA=11001110101100001101001000000110 , OperandB=1011101001110111001110111000 , op_code=1000 , data_out=110011101011000011010010000001
+# -------------Scoreboard Signals---------------
+# OperandA=11001110101100001101001000000110 , OperandB=1011101001110111001110111000 , op_code=1000 , data_out=110011101011000011010010000001
+# Right Shift Succcesfull
+# -------------Generator Class Signals---------------
+# OperandA=11001001111010001011010110000101 , OperandB=10100000100001001000100111100011 , op_code=111 , data_out=x
+# -------------Driver Class Signals---------------
+# OperandA=11001001111010001011010110000101 , OperandB=10100000100001001000100111100011 , op_code=111 , data_out=x
+# -------------Monitor Class Signals---------------
+# OperandA=11001001111010001011010110000101 , OperandB=10100000100001001000100111100011 , op_code=111 , data_out=1100100111101000101101011000010100
+# -------------Scoreboard Signals---------------
+# OperandA=11001001111010001011010110000101 , OperandB=10100000100001001000100111100011 , op_code=111 , data_out=1100100111101000101101011000010100
+# Left Shift Succesfull
+# -------------Generator Class Signals---------------
+# OperandA=11111111100100110001111110011101 , OperandB=1100100011111001000010000110000 , op_code=1000 , data_out=x
+# -------------Driver Class Signals---------------
+# OperandA=11111111100100110001111110011101 , OperandB=1100100011111001000010000110000 , op_code=1000 , data_out=x
+# -------------Monitor Class Signals---------------
+# OperandA=11111111100100110001111110011101 , OperandB=1100100011111001000010000110000 , op_code=1000 , data_out=111111111001001100011111100111
+# -------------Scoreboard Signals---------------
+# OperandA=11111111100100110001111110011101 , OperandB=1100100011111001000010000110000 , op_code=1000 , data_out=111111111001001100011111100111
+# Right Shift Succcesfull
+# ** Note: $finish    : D:/questa/examples/testbench.sv(186)
+#    Time: 1 us  Iteration: 0  Instance: /tb_top
+# 1
+# Break at D:/questa/examples/testbench.sv line 186
